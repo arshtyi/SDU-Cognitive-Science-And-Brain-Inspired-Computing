@@ -1,1 +1,4 @@
-material
+*.pdf
+.venv
+.ruff_cache
+output
