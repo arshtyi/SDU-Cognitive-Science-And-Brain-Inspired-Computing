@@ -1,0 +1,15 @@
+default: list
+
+list:
+    @just --list
+
+archive-reports:
+    #!/usr/bin/env python3
+    from pathlib import Path
+    from shutil import copy2
+
+    for source in sorted(Path("../lab").glob("[0-9]/report/main.pdf")):
+        number = "零一二三四五六七八九"[int(source.parent.parent.name)]
+        destination = Path(f"24智能-202400130242-彭靖轩-实验{number}报告.pdf")
+        copy2(source, destination)
+        print(f"{source} -> {destination}")

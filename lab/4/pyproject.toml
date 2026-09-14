@@ -1,34 +1,23 @@
 [project]
-name = "lab4"
-version = "0.1.0"
-authors = [
-    { name = "arshtyi", email = "arshtyi@foxmail.com" },
-]
+name            = "lab4"
+version         = "0.1.0"
+authors         = [ { name = "arshtyi", email = "arshtyi@foxmail.com" } ]
 requires-python = ">=3.13"
-dependencies = [
-    "matplotlib>=3.10",
-    "numpy>=2.2",
-]
+dependencies    = [ "matplotlib>=3.10", "numpy>=2.2" ]
 
 [dependency-groups]
-dev = [
-    "ruff>=0.16.7",
-    "ty>=0.0.80",
-]
+dev = [ "ruff>=0.16.7", "ty>=0.0.80" ]
 
 [tool.ruff]
 line-length = 150
 
 [tool.ruff.lint]
-select = [
-    "E",
-    "F",
-    "I",
-    "UP",
-    "B",
-]
+extend-select = [ "I", "UP", "B", "SIM", "RUF", "PERF" ]
+
+[tool.ruff.format]
+quote-style  = "double"
+indent-style = "space"
+line-ending  = "lf"
 
 [tool.ty.src]
-include = [
-    "main.py",
-]
+include = [ "main.py" ]

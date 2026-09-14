@@ -1,5 +1,5 @@
 [project]
-name            = "lab3"
+name            = "lab8"
 version         = "0.1.0"
 authors         = [ { name = "arshtyi", email = "arshtyi@foxmail.com" } ]
 requires-python = ">=3.13"

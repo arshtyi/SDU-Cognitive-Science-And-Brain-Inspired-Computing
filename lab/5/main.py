@@ -146,7 +146,7 @@ def save_results(train_labels: Integers, train_predictions: Integers, test_label
                 total = int(mask.sum())
                 correct = int(np.count_nonzero(labels[mask] == predictions[mask]))
                 writer.writerow([name, digit, total, correct, correct / total])
-                print(f"{name:5s} {str(digit):3s}: {correct}/{total} = {correct / total:.2%}")
+                print(f"{name:5s} {digit!s:3s}: {correct}/{total} = {correct / total:.2%}")
     with (OUTPUT / "predictions.csv").open("w", encoding="utf-8", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(["index", "target", "prediction"])
