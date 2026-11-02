@@ -1,0 +1,4 @@
+[submodule "nmtlab"]
+	path = nmtlab
+	url = git@github.com:arshtyi/nmtlab.git
+	branch = main
