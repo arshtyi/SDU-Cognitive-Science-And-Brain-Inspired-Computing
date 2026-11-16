@@ -2,3 +2,7 @@
 	path = nmtlab
 	url = git@github.com:arshtyi/nmtlab.git
 	branch = main
+[submodule "exam/ezexam"]
+	path = exam/ezexam
+	url = git@github.com:gbchu/ezexam.git
+	branch = main
